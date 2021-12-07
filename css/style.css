@@ -607,14 +607,24 @@ button[type=submit]:hover {
 
 @media screen and (prefers-reduced-motion) {
   *{
-      animation: none;
-      transition: none;
-      -webkit-transition: none;
+    animation: none;
+    transition: none;
+    -webkit-transition: none;
   }
   html{
     scroll-behavior: auto;
   }
-  header{
-    background-attachment: initial;
+  main{
+    background-attachment: scroll;
   }
+  .flip-card-inner, .text-block, .text-block:hover{
+    transition: none;
+  }
+
+  .text-block, .text-block:hover{
+    outline: none;
+    bottom: 0;
+    border-bottom: 5pt solid #501604;
+  }
+
 }
