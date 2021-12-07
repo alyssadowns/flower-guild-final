@@ -490,7 +490,7 @@ button[type=submit]:hover {
   .nav_item a {
     padding: 0 3vw;}
 
-  #tablet.gallery{
+  .gallery{
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(3,auto);
